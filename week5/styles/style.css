@@ -1,0 +1,36 @@
+.flexcontainerheader {
+    display: flex;
+    justify-content: center;
+    height: 20px;
+}
+
+.flexcontainermain {
+    display: flex;
+    height: 50vh;
+}
+
+.sectionmain {
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.aside,
+.section,
+.sec3,
+.sec {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+
+}
+
+.section {
+    width: 60vw;
+    height: 20vh;
+}
+
+.flexcontainerfooter {
+    display: flex;
+    justify-content: space-around;
+
+}
