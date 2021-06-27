@@ -1,0 +1,196 @@
+#image {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 645px;
+    top: 25px;
+}
+
+h1 {
+    position: absolute;
+    width: 998px;
+    height: 139px;
+    left: 602px;
+    top: 340px;
+    font-family: Banny;
+    font-size: 96px;
+    line-height: 0;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+h5 {
+    position: absolute;
+    width: 1440px;
+    height: 18px;
+    left: 650px;
+    top: 326px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+}
+
+@font-face {
+    font-family: Banny;
+    src: url(/assets/fonts/TTF/Banny-BoldRound.ttf);
+}
+
+#home,
+#about,
+#team,
+#booking,
+#menu,
+#galerie,
+#event,
+#contact {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    position: absolute;
+    width: 133px;
+    height: 100px;
+}
+
+#home {
+
+    left: 80px;
+    top: 0;
+}
+
+#about {
+
+    left: 211px;
+    top: 0;
+
+}
+
+#team {
+
+    left: 344px;
+    top: 0;
+
+}
+
+#booking {
+
+    left: 477px;
+    top: 0;
+
+}
+
+#menu {
+
+    left: 830px;
+    top: 0;
+
+}
+
+#galerie {
+
+    left: 961px;
+    top: 0;
+
+}
+
+#event {
+
+    left: 1094px;
+    top: 0px;
+
+}
+
+#contact {
+
+    left: 1227px;
+    top: 0px;
+
+}
+
+#book {
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    left: 501px;
+    top: 515px;
+}
+
+#explore {
+
+
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    left: 741px;
+    top: 515px;
+}
+
+button:hover {
+    background-color: #FFD600;
+}
+
+
+.btn-group {
+    position: absolute;
+    width: 60px;
+    height: 220px;
+    left: 1301px;
+    top: 340px;
+}
+
+
+#home:hover {
+    color: #FFD600
+}
+
+#about:hover {
+    color: #FFD600
+}
+
+#team:hover {
+    color: #FFD600
+}
+
+#booking:hover {
+    color: #FFD600
+}
+
+#menu:hover {
+    color: #FFD600
+}
+
+#galerie:hover {
+    color: #FFD600
+}
+
+#event:hover {
+    color: #FFD600
+}
+
+#contact:hover {
+    color: #FFD600
+}
