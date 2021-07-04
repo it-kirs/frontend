@@ -1,0 +1,207 @@
+.container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 10% 20% 15% 15% 40%;
+    background-color: rgb(43, 39, 39);
+    color: white;
+}
+
+.image {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    margin: 10%;
+}
+
+.nav-1 {
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+    font-size: 1em;
+    margin-top: 10%;
+
+}
+
+.nav-2 {
+    grid-row: 1 / 2;
+    grid-column: 4 / 5;
+    font-size: 1em;
+    margin-top: 10%;
+}
+
+.nav-3 {
+    grid-row: 1 / 2;
+    grid-column: 5 / 6;
+    font-size: 1em;
+    margin-top: 10%;
+}
+
+.nav-4 {
+    grid-row: 1 / 2;
+    grid-column: 6 / 7;
+    font-size: 1em;
+    margin-top: 10%;
+
+}
+
+.nav-5 {
+    grid-row: 1 / 2;
+    grid-column: 7 / 8;
+    font-size: 1em;
+    margin-top: 10%;
+}
+
+.header {
+    grid-row: 2 / 3;
+    grid-column: 2 / 4;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4em;
+    margin-top: 15%;
+
+}
+
+.name {
+    grid-row: 3 / 4;
+    grid-column: 2 / 4;
+
+}
+
+.name-1 {
+    font-size: 1.3em;
+}
+
+.name-2 {
+    font-size: 1em;
+}
+
+.article-1 {
+    grid-row: 3 / 4;
+    grid-column: 5 / 7;
+    background-color: rgb(94, 88, 88);
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    font-size: 1.2em;
+    padding: 3%;
+}
+
+.article-2 {
+    grid-row: 3 / 4;
+    grid-column: 7 / 9;
+    background-color: rgb(94, 88, 88);
+    margin-right: 10%;
+    margin-bottom: 5%;
+    font-size: 1.2em;
+    padding: 3%;
+}
+
+.article-3 {
+    grid-row: 4 / 5;
+    grid-column: 5 / 7;
+    background-color: rgb(94, 88, 88);
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 1.2em;
+    padding: 3%;
+}
+
+.article-4 {
+    grid-row: 4 / 5;
+    grid-column: 7 / 9;
+    margin-right: 10%;
+    background-color: rgb(94, 88, 88);
+    margin-top: 5%;
+    font-size: 1.2em;
+    padding: 3%;
+}
+
+.footer-1 {
+    grid-row: 5 / 6;
+    grid-column: 2 / 3;
+
+}
+
+.footer-2 {
+    grid-row: 5 / 6;
+    grid-column: 3 / 4;
+}
+
+.footer-3 {
+    grid-row: 5 / 6;
+    grid-column: 4 / 5;
+}
+
+.footer-4 {
+    grid-row: 5 / 6;
+    grid-column: 5 / 6;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.org {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.exp {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.vis {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.press {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.ref {
+    font-size: 0.8em;
+}
+
+footer {
+    margin-top: 15px;
+    background-color: rgb(94, 88, 88);
+}
+
+.color {
+    margin-top: 15px;
+    grid-row: 5/6;
+    grid-column: 1/2;
+    background-color: rgb(94, 88, 88);
+}
+
+.color2 {
+    margin-top: 15px;
+    grid-row: 5/6;
+    grid-column: 6/9;
+    background-color: rgb(94, 88, 88);
+}
+
+.line {
+    grid-row: 1/2;
+    grid-column: 1/9;
+    border-bottom: 1px solid white;
+}
+
+.mag {
+    grid-row: 1/2;
+    grid-column: 8/9;
+    margin-top: 15px;
+}
