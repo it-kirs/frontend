@@ -39,12 +39,6 @@
 }
 
 
-/*.main {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr;
-}*/
-
 .aside {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -180,7 +174,7 @@ li {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 599px) {
     .footer {
         display: none;
     }
@@ -198,3 +192,4 @@ li {
         background-color: rgb(43, 39, 39);
         color: aliceblue;
     }
+}
