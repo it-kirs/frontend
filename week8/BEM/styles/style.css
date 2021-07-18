@@ -5,7 +5,12 @@
 
 .form-group {
     width: 18rem;
+    background-color: #EC615B;
 
+}
+
+.form {
+    background-color: #EC615B;
 }
 
 label {
@@ -15,4 +20,8 @@ label {
 
 .card_image {
     background-color: #EC615B;
+}
+
+.button {
+    text-align: right;
 }
