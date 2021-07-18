@@ -1,0 +1,28 @@
+/*@font-face {
+    font-family: Intro;
+    src: url(./fonts/Intro.otf);
+
+}
+
+.cards_title {
+    font-family: Intro;
+
+}*/
+.card {
+    width: 18rem;
+}
+
+
+.form-group {
+    width: 18rem;
+    background-color: #EC615B;
+}
+
+label {
+    color: white;
+
+}
+
+.card_image {
+    background-color: #EC615B;
+}
