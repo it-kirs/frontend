@@ -20,5 +20,8 @@ function divide() {
     let a = document.getElementById('number1').value;
     let b = document.getElementById('number2').value;
     let div_ab = Number(a)/Number(b);
+    if (b!=0)
     document.getElementById('result').innerHTML=`Результат: ${div_ab}`;
+    else 
+    document.getElementById('result').innerHTML="На ноль делить нельзя!";
 }

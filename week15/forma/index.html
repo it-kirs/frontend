@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+    <div class="container">
+        <img class="google" src="assets/google.jpeg">
+    <h1>Создайте аккаунт Google</h1>
+    <div>
+    <input type="text" id="name" class="name" placeholder="Имя"/>
+    <input type="text" id="surname" class="surname" placeholder="Фамилия"/>
+</div>
+<div class="email">
+    <input type="text" id="mail" class="mail" size=43 placeholder="Электронная почта"/>
+    <div class="help">Можно использовать буквы латинского алфавита, цифры и точки.</div>
+    </div>
+    <div class="ref">
+    <a href="URL">Использовать текущий адрес электронной почты</a>
+</div>
+    <div class="passconfirm">
+    <input type="password" id="password" class="password" placeholder="Пароль"/>
+    <input type="password" id="confirm" class="confirm" placeholder="Подтвердить"/>
+
+    <div class="passdif">Пароль должен содержать не менее восьми знаков,  включать буквы, цыфры и специальные символы.</div>
+</div> 
+    <div class="check">
+        <input type="checkbox" id="pass"/>
+        <label>Показать пароль</label>
+    </div>
+    <div id="errorMessage"></div>
+    <div id="welcome"></div>
+    <div>
+        <button onclick="check();">Войти</button>
+        <button>Далее</button>
+    </div>
+    </div>
+</main>
+<script src="index.js"></script>
+</body>
+</html>
