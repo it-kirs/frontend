@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="calc">
+        <div class="forma">
+            <h1>Калькулятор стоимости автомобиля</h1>
+            <div class="block1">
+            <select id="brand">
+                <option value="0">Марка</option>
+                <option value="1">Audi</option>
+                <option value="2">BMW</option>
+                <option value="3">Mercedes</option>
+              </select>
+              <select id="model">
+                <option >Модель</option>
+                
+                
+              </select>
+              <select id="year">
+                <option value="0">Год выпуска</option>
+                <option value="300000">2021</option>
+                <option value="200000">2020</option>
+                <option value="170000">2019</option>
+                <option value="120000">2018</option>
+                <option value="0">2017</option>
+              </select>
+            </div>
+            <label for="enginetype">Тип двигателя:
+              <div id="enginetype">
+                <input type="radio" id="petrol"
+                 name="engine" value="200000" checked>
+                <label for="petrol">Бензиновый</label>
+        
+                <input type="radio" id="diesel"
+                 name="engine" value="0">
+                <label for="diesel">Дизельный</label>
+            </div>
+        </label>
+              
+                  <label for="security">Безопасность:
+                <div id="security">
+                    <div>
+                <input type="checkbox" id="antilock"
+                   name="antilock" value="50000">
+                  <label for="antilock">Антиблокировочная система</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="airbag"
+                   name="airbag" value="60000">
+                  <label for="airbag">Боковые подушки безопасности</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="nightvision"
+                   name="nightvision" value="50000">
+                  <label for="nightvision">Система ночного видения</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="blindspots"
+                   name="blindspots" value="70000">
+                  <label for="blindspots">Система контроля слепых зон</label>
+                </div>
+                </div>
+            </label>
+                
+                   <label for="intercolor">Цвет салона:
+                   <div id="intercolor">
+                    <input type="radio" id="dark"
+                     name="color" value="0" checked>
+                    <label for="dark">Темный</label>
+                  
+                  <input type="radio" id="light"
+                     name="color" value="200000">
+                    <label for="light">Светлый</label>
+                </label>
+                </div>
+                <span>
+                    <input type="checkbox" id="insurance"
+                       name="insurance" value="150000">
+                      <label for="insurance">Страховка</label>
+                    </span>
+                    <div id="btn">
+                  <button id="button" onclick="carcalc()">Рассчитать</button>
+                </div>
+                  <div id='container'></div>
+    </main>
+    
+</div>
+    <script src="index.js"></script>
+</body>
+</html>

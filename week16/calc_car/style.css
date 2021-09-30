@@ -1,0 +1,42 @@
+.forma {
+    display: flexbox;
+    width: 40%;
+    height: 90%;
+    border: 1px solid rgb(206, 202, 202);
+    border-radius: 10px;
+    margin:auto;
+    margin-top:40px;
+    padding: 30px;
+}
+h1 {
+    
+    font-size:x-large;
+}
+.block1 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+select {
+    padding: 5px;
+    margin-right: 5px;
+    
+}
+#enginetype {
+padding-bottom: 20px;
+padding-top: 10px;
+}
+#intercolor {
+    padding-bottom: 20px;
+    padding-top: 10px;
+    }
+    #security {
+        padding-bottom: 20px;
+        padding-top: 10px;
+        }
+#btn {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+#container{
+font-weight: 700;
+}
