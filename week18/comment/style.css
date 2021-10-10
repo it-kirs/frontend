@@ -1,0 +1,20 @@
+.form {
+    display: flexbox;
+    width: 60%;
+    height: 90%;
+    border: 1px solid rgb(206, 202, 202);
+    border-radius: 10px;
+    margin:auto;
+    margin-top:40px;
+    padding: 30px;
+}
+#textcomment {
+    margin-top: 10px;
+}
+#send {
+    margin-top: 15px;
+}
+
+#comment1{
+    margin-bottom: 15px;
+}
