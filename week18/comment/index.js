@@ -3,6 +3,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
     if (name!=null) {
      document.getElementById('author').value=name;
     }
+    /*let text= localStorage.getItem('comment');
+    if (text!=null) {
+     document.getElementById('comment1').innerHTML=text;
+     
+    }*/
+    let text = JSON.parse(localStorage.getItem('comment')); 
+    
+    alert(text);
 }); 
 let arr = [];
 let i=0;
@@ -21,8 +29,13 @@ function comment() {
     if (localStorage.getItem('name')==null){
         localStorage.setItem('name',author);
     }
-   
+    /*if (localStorage.getItem('comment')==null){
+
+        localStorage.setItem('comment',JSON.stringify(arr));
+    }*/
+    //localStorage.setItem(`comment${i}`,arr[i])
+    
+    localStorage.setItem('comment',localStorage.getItem('comment')+JSON.stringify(arr[i]));
 }
-function checkSpam(text){
-    cleantext=text.replace(/xxx|viagra/gi, "***");
-}
+function checkSpam(text) {
+    cleantext=text.replace(/xxx|viagra/gi, "***");}
