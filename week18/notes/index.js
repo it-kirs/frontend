@@ -6,7 +6,6 @@ if (localStorage.getItem('notes')) {
   notesArr = []
 }
 localStorage.setItem('notes', JSON.stringify(notesArr));
-const data = JSON.parse(localStorage.getItem('notes'));
 
 function createLi (text){
     let elemli=document.createElement('li');
@@ -22,7 +21,7 @@ document.getElementById('button2').addEventListener('click', function () {
     createLi(input.value);
     input.value = "";
   });
-
+  const data = JSON.parse(localStorage.getItem('notes'));
 data.forEach(function(note) {
     createLi(note);
 });
