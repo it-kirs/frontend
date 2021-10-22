@@ -1,0 +1,26 @@
+#img1{
+    width: 50vw;
+    height: 60vh;
+    display: block;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center; 
+    color: rgb(71, 70, 70);
+}
+h3{
+    color: rgb(71, 70, 70);
+    margin-left: 50px;
+}
+#explanation{
+    margin-left: 50px;
+    text-indent: 20px;
+}
+body {
+    background-color: rgb(228, 225, 225);
+}
+#count{
+    margin-top: 20px;
+    margin-left: 50px;
+    font-weight: 700;
+}
