@@ -1,5 +1,5 @@
 let favouriteCollection = [];
-let heroesJson = `[
+let heroesCollection = `[
     {
         "heroname": "Бэтмен",
         "universe": "DC Comics",
@@ -93,7 +93,26 @@ let heroesJson = `[
     }
 
 ]`
-document.addEventListener("DOMContentLoaded", function(event){
+document.addEventListener("DOMContentLoaded",function(){
+    getHeroes()
+})
+function getHeroes() {
+    const heroes = JSON.parse(heroesCollection);
+    const collection = localStorage.getItem("favouriteCollection");
+    if(collection){
+        favouriteCollection = JSON.parse(localStorage.getItem("favouriteCollection"))
+    }
+    else{
+        localStorage.setItem("favouriteCollection", JSON.stringify([]));
+    }
+
+
+    for( let i = 0; i < heroes.length; i++){
+        createPockemon(heroes[i])
+    }
+}
+
+function createHero(data){
     let heroes= JSON.parse(heroesJson);
     let heroesContent="";
     for (let hero of heroes) {
@@ -108,16 +127,54 @@ document.addEventListener("DOMContentLoaded", function(event){
         <img src="${hero.foto}">
         <button class="buttonLike">like</button>
         </div>`;
-        console.log(document.querySelectorAll("button"))
-        //toggleLocaleStorage(event.target.closest('tr').firstChild.textContent);
+    //{
+    //   "name": "bulbasaur",
+    //   "weight": 69,
+    //   "height": 7,
+    //   "abilities":[1,2]
+    // },
+    let tr = document.createElement('tr');
+    let td_name = tr.appendChild(document.createElement('td'));
+    td_name.classList.add('td_name');
+    td_name.innerHTML = data.name;
+    let td_weight = tr.appendChild(document.createElement('td'));
+    td_weight.innerHTML = data.weight;
+    let td_height = tr.appendChild(document.createElement('td'));
+    td_height.innerHTML = data.height;
+    let td_abilities = tr.appendChild(document.createElement('td'));
+    td_abilities.innerHTML = data.abilities.length;
+
+    let td_like = tr.appendChild(document.createElement('td'));
+    let buttonLike = document.createElement('button')
+    buttonLike.classList.add('buttonLike');
+    //Проверяем, сохранили ли мы покемона в любимые
+    const index = favouriteCollection.indexOf(data.name);
+    if (index !== -1) {
+        buttonLike.classList.add('liked');
+    }
+    buttonLike.textContent = '<3';
+    td_like.appendChild(buttonLike);
+
+
+    buttonLike.addEventListener("click", toggleLike);
+
+
+    document.getElementById('tbody').appendChild(tr)
 }
 
-
-
-    document.getElementById("heroesContainer").innerHTML=heroesContent;
-});
-
-document.querySelectorAll("button").forEach(el=>{el.addEventListener("click",function(){ alert("Hello World!"); })}); 
-
 function toggleLike(event){
-    event.target.closest(".buttonLike").classList.toggle("liked");}
+    event.target.closest(".buttonLike").classList.toggle("liked");
+    toggleLocaleStorage(event.target.closest('tr').firstChild.textContent);
+
+}
+
+function toggleLocaleStorage(value) {
+    console.log();
+    const index = favouriteCollection.indexOf(value);
+    if (index === -1) {
+        favouriteCollection.push(value);
+    } else {
+        favouriteCollection.splice(index, 1);
+    }
+    localStorage.setItem("favouriteCollection", JSON.stringify(favouriteCollection));
+}

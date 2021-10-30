@@ -2,3 +2,20 @@ container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
+h1 {
+    text-align:center;
+
+}
+
+.buttonLike{
+    padding: 5px;
+    border-radius: 50%;
+    border: none;
+    background: white;
+    cursor: pointer;
+    
+  }
+  .buttonLike.liked{
+    color: white;
+    background: red;
+  }
