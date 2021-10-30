@@ -9,7 +9,7 @@ function search() {
     .then(response=>response.json())
     .then(gif=>{
         //console.log(gif.data[0].url)
-        document.getElementById("gif").src=gif.data[0].url;
+        document.getElementById("gif").src=gif.data[0].embed_url;
         
     })
     .catch(err => console.log(err));
