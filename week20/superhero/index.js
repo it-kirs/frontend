@@ -106,10 +106,8 @@ document.addEventListener("DOMContentLoaded", function(event){
         <div>Суперсилы: ${hero.superpower}</div>
         <div>Подробнее: ${hero.description}</div>
         <img src="${hero.foto}">
-        <button class="buttonLike">like</button>
-        </div>`;
-        console.log(document.querySelectorAll("button"))
-        //toggleLocaleStorage(event.target.closest('tr').firstChild.textContent);
+        </div>`
+       
 }
 
 
@@ -117,7 +115,5 @@ document.addEventListener("DOMContentLoaded", function(event){
     document.getElementById("heroesContainer").innerHTML=heroesContent;
 });
 
-document.querySelectorAll("button").forEach(el=>{el.addEventListener("click",function(){ alert("Hello World!"); })}); 
+//document.querySelectorAll("button").forEach(el=>{el.addEventListener("click",function(){ alert("Hello World!"); })}); 
 
-function toggleLike(event){
-    event.target.closest(".buttonLike").classList.toggle("liked");}

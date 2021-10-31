@@ -17,22 +17,23 @@ body {
 table {
   width: 800px;
   border-right-color: #ffffff;
-  margin-top: 100px;
-  font-size: 18px;
+  margin-top: 20px;
+  font-size: 14px;
   /* /* border: 1px solid #343a40; */
   border-collapse: collapse; 
 }
 
-th, td {
-  /* border: 1px solid #343a40; */
-  padding: 16px 24px;
+
+td,th {
+  
+  padding: 16px 15px;
   text-align: left;
 }
 
 th {
-  background-color: #087f5b;
+  background-color: #4c4e4e;
   color: #fff;
-  width: 25%;
+  /*width: 35%;*/
 }
 
 tbody tr:nth-child(odd){
@@ -55,4 +56,9 @@ cursor: pointer;
 .buttonLike.liked{
 color: white;
 background: red;
+}
+
+img {
+  width: 200px;
+  height: 150px;
 }
