@@ -1,0 +1,30 @@
+form {
+    display: flexbox;
+    width: 40%;
+    height: 90%;
+    border: 1px solid rgb(206, 202, 202);
+    border-radius: 10px;
+    margin:auto;
+    margin-top:40px;
+    padding: 30px;
+}
+input:required:valid { border-color: green;}
+#savebtn {
+    margin-top: 40px;
+}
+.petsname, .name, .country, .city, .email, .breed{
+    display:flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.petsname, .name, .contact, .breed, .food, .sex, .comment, .country, .city {
+margin-bottom: 10px;
+}
+fieldset {
+    padding: 10px;
+    width: 70%;
+}
+#sexlabel {
+    margin-bottom: 3px;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="formId">
+    <h1>Анкета</h1>
+    
+    <div class="petsname">
+        <label for="petsname">* Кличка питомца:</label>
+        <input type="text" id="petsname" name="petsname" required/>
+    </div>
+    <div class="name">
+        <label for="name">* Имя владельца:</label>
+        <input type="text" id="name" name="name" required/>
+    </div>
+
+    <div class="contact">
+        <fieldset>
+            <legend>Контакты владельца:</legend>
+            <div class="country">
+            <label for="country">* Страна</label>
+            <input type="text" id="country" name="country" required/>
+        </div>
+        <div class="city">
+            <label for="city">* Город</label>
+            <input type="text" id="city" name="city" required/>
+        </div>
+        <div class="email">
+        <label for="email">* E-mail</label>
+            <input type="email" id="email" name="email" required/>
+        
+    </div>
+        </fieldset>
+    </div>
+
+    <div class="breed">
+        <label for="breed">Порода питомца:</label>
+        <select id="breed" name="breed" required>
+            <option value="0" disabled selected>выберите породу</option>
+            <option value="1">абиссинская</option>
+            <option value="2">британская</option>
+            <option value="3">персидская</option>
+            <option value="4">мейн-кун</option>
+            <option value="5">девон-рекс</option>
+        </select>
+    </div>
+    <div class="food">
+        <div>Чем питается питомец:</div><br />
+        <div class="food1">
+        <input type="checkbox" name="food" value="1" id="food1"/>
+        <label for="food1">Cухой корм</label>
+    </div>
+    <div class="food2">
+        <input type="checkbox" name="food" value="2" id="food2"/>
+        <label for="food2">Влажный корм</label>
+    </div>
+        <div class="food3"> 
+        <input type="checkbox" name="food" value="3" id="food3"/>
+        <label for="food3">Натуральный корм</label>
+    </div>
+    </div>
+
+    <div class="sex">
+        <div id="sexlabel">Укажите пол питомца:</div>
+        <label for="female">Самка</label>
+        <input type="radio" name="sex" id="female"/>
+    
+        <label for="male">Самец</label> 
+            <input type="radio" name="sex" id="male"/>
+        
+    </div>
+
+    <div class="comment">
+        <label for="comment">Комментарий владельца:
+        <textarea rows="5" cols="25" id="comment" minlength="10" maxlength="200" name="comment"></textarea>
+    </label>
+    </div>
+
+    <div>
+        <label for="foto">Загрузите фото питомца</label>
+        <input type="file" id="foto"></div>
+    <button id="savebtn" type="submit" name="btn">Сохранить</button>
+    
+</form>
+<script src="index.js"></script>
+</body>
+
+</html>
