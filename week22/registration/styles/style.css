@@ -1,0 +1,66 @@
+
+.container {
+    display: flexbox;
+    width: 40%;
+    height: 90%;
+    border: 1px solid rgb(206, 202, 202);
+    border-radius: 10px;
+    margin:auto;
+    margin-top:40px;
+    padding: 30px;
+    
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+}
+input{
+    padding: 5px;
+}
+.name {
+    margin-right: 5px;
+    
+}
+.mail{
+    margin-top: 20px;
+}
+.email {
+    display: flexbox;
+}
+.help{
+    font-size: small;
+    margin: 4px;
+}
+a {
+    text-decoration: none;
+}
+.ref{
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.passdif {
+    font-size: small;
+    margin: 4px;
+}
+.password {
+    margin-right: 5px;
+}
+.check {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.google {
+    width: 10vw;
+    height: 15vh;
+}
+button {
+    background-color:rgba(0, 0, 255, 0.767);
+    color: white;
+    
+}
+#errorInfo {
+    color:red;
+    margin-bottom: 20px;
+}
+#welcome {
+    margin-bottom: 20px; 
+}
