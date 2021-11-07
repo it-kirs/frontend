@@ -5,11 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 </head>
 <body>
-    <h2>Dashbord</h2>
-    <canvas id="myChart"></canvas>
-    <div id="container" style="width: 500px; height: 400px;"></div>
-    <script src="bundle.js"></script>
+    <div id="dashbordid">
+
+        <div class="category-wrap">
+            <h3>Project</h3>
+            <ul>
+              <li><a href="">User productivity</a></li>
+              <li><a href="">Backlog</a></li>
+              <li><a href="">Active Sprint</a></li>
+              <li><a href="">Reports</a></li>
+              <li><a href="">Settings</a></li>
+            </ul>
+          </div>
+
+        <div id="div1">
+        <h2>User productivity</h2>
+        <div id="date"></div>
+           <canvas id="myChart" width="400" height="100"></canvas>
+           <div id="container"></div>
+        </div>
+</div>
+  <script src="bundle.js"></script>
 </body>
 </html>

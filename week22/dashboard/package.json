@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "anychart": "^8.10.0",
-    "chart.js": "^3.6.0"
+    "chart.js": "^3.6.0",
+    "moment": "^2.29.1"
   }
 }
