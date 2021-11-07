@@ -1,4 +1,4 @@
-const moment = require('chart.js');
+const chart = require('chart.js');
 let ctx = document.getElementById('myChart').getContext('2d');
 let chart = new Chart(ctx, {
 // Тип графика
