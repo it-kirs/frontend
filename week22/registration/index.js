@@ -56,7 +56,7 @@ btn.onclick= function (e){
         if (response.ok) {
           return response.json();
         } else {
-            if 
+            if ()
           throw new Error('Something went wrong');
         }
       })
