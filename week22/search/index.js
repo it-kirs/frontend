@@ -23,6 +23,7 @@ function search() {
             error.response = res;
             throw error
         }
+        
         return res;
     })
     .then(response => {    
