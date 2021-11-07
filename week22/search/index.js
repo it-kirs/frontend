@@ -5,19 +5,19 @@ function search() {
     else {   
     fetch("https://api.giphy.com/v1/gifs/search?api_key=IuZJBI8JmPrHBOiRTyc7wAt4coqXaKli&q="+phrase+"&limit=5&offset=0&rating=g&lang=en")
     .then(response=>response.json())
-    .then(response => {
+    /*.then(response => {
         if (response.status ='403') {
             throw new Error("Authorisation Error");
         } 
         return response;
-    })
-    /*.then((res) => {
+    })*/
+    .then((res) => {
         if (res.data=[]) {
             throw new Error("Gifs not found");
         }
         return response;
     })
-    .then((res) => {
+   /* .then((res) => {
         if (res.headers['content-type'] !== 'application/json') {
             let error = new Error('Некорректный ответ от сервера');
             error.response = res;
