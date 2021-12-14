@@ -1,0 +1,18 @@
+.hero-card {
+    width: 95%;
+    margin: 10px;
+}
+.hero-name {
+    font-weight: bold;
+    font-size: x-large;
+    margin: 5px;
+}
+img {
+    width: 100%;
+}
+span {
+    font-weight: bold; 
+}
+.hero-universe, .hero-alterego, .hero-occupation, .hero-friends, .hero-superpower, .hero-description {
+    margin: 3px;
+}
