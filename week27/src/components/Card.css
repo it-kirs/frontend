@@ -1,0 +1,54 @@
+.card {
+  border: #e8ebeb solid 4px;
+  margin: 20px 15px;
+  height: 100%;
+}
+
+.card-tarifname {
+  color: white;
+  height: 20%;
+  font-size: larger;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+.card-tarifprice {
+  height: 45%;
+  font-size: xx-large;
+  font-weight: bold;
+  color: white;
+  padding-top: 25%;
+  padding-bottom: 20%;
+}
+
+.card-tarifspeed {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: 19%;
+  color: #6d6a6a;
+  font-weight: 600;
+}
+
+.card-tariftraffic {
+  height: 16%;
+  background-color: #e8ebeb;
+  color: #6d6a6a;
+  font-size: small;
+  font-weight: 500;
+  padding: 10px;
+}
+
+span {
+  font-size: small;
+}
+
+.rub {
+  position: relative;
+  top: -15px;
+}
+
+.selected {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px #6d6a6a;
+}/*# sourceMappingURL=Card.css.map */

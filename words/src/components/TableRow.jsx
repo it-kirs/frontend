@@ -1,11 +1,3 @@
-import Card from "./components/Card";
-import Table from "./components/Table";
-import TableRow from "./components/TableRow";
-import Header from "./components/Header";
-import "./App.css";
-import "./styles/Card.scss";
-import "./styles/Table.scss";
-import "./styles/Header.scss";
 const words = [
   {
     id: "10847",
@@ -20,7 +12,7 @@ const words = [
     english: "hedgehog",
     transcription: "[ˈhedʒhɔːɡ]",
     russian: "ёжик",
-    tags: "животные334",
+    tags: "лдолдд",
     tags_json: '["u043bu0434u043eu043bu0434u0434"]',
   },
   {
@@ -28,7 +20,7 @@ const words = [
     english: "apple",
     transcription: "[ˈæpl]",
     russian: "яблоко",
-    tags: "фрукты",
+    tags: "рлоророл",
     tags_json: '["u0440u043bu043eu0440u043eu0440u043eu043b"]',
   },
   {
@@ -36,7 +28,7 @@ const words = [
     english: "pear",
     transcription: "[peə]",
     russian: "груша",
-    tags: "фрукты",
+    tags: "Array",
     tags_json: "null",
   },
   {
@@ -52,7 +44,7 @@ const words = [
     english: "plum",
     transcription: "[plʌm]",
     russian: "слива",
-    tags: "фрукты",
+    tags: "Array",
     tags_json: "null",
   },
   {
@@ -60,7 +52,7 @@ const words = [
     english: "unicorn",
     transcription: "",
     russian: "единорог",
-    tags: "животные",
+    tags: "Array",
     tags_json: "null",
   },
   {
@@ -97,68 +89,33 @@ const words = [
   },
 ];
 
-/*
-function App() {
-  return (
-    <div className="App">
-      <Header></Header>
-      <div className="Table">
-        {cards.map((table) => (
-          <Table
-            id={table.id}
-            english={table.english}
-            transcription={table.transcription}
-            russian={table.russian}
-            tags={table.tags}
-          ></Table>
-        ))}
-      </div>
-      <div className="Card">
-        {cards.map((card) => (
-          <Card
-            id={card.id}
-            english={card.english}
-            transcription={card.transcription}
-            russian={card.russian}
-            tags={card.tags}
-          ></Card>
-        ))}
-      </div>
-    </div>
+const TableRow = (props) => {
+  const { id, english, transcription, russian, isEditable } = props;
+  return isEditable ? (
+    <tr className={"classname"}>
+      <td>
+        <input value={id} />
+      </td>
+      <td>
+        <input value={english} />
+      </td>
+      <td>
+        <input value={transcription} />
+      </td>
+      <td>
+        <input value={russian} />
+      </td>
+      <td>
+        <button data-id={id} />
+      </td>
+    </tr>
+  ) : (
+    <tr>
+      <td>{id}</td>
+      <td>{english}</td>
+      <td>{transcription}</td>
+      <td>{russian}</td>
+    </tr>
   );
-}
-export default App;
-*/
-function App() {
-  return (
-    <div className="App">
-      <Header></Header>
-      <div className="Table">
-        <Table></Table>
-      </div>
-      <div className="Card">
-        {words.map((card) => (
-          <Card
-            id={card.id}
-            english={card.english}
-            transcription={card.transcription}
-            russian={card.russian}
-            tags={card.tags}
-          ></Card>
-        ))}
-      </div>
-    </div>
-  );
-}
-export default App;
-/*
- {words.map((word) => (
-          <TableRow
-            id={word.id}
-            english={word.english}
-            transcription={word.transcription}
-            russian={word.russian}
-            tags={word.tags}
-          ></TableRow>
-        ))}
-        */
+};
+export default TableRow;

@@ -1,11 +1,28 @@
-import Card from "./components/Card";
-import Table from "./components/Table";
-import TableRow from "./components/TableRow";
-import Header from "./components/Header";
-import "./App.css";
-import "./styles/Card.scss";
-import "./styles/Table.scss";
-import "./styles/Header.scss";
+/*function Table(props) {
+  return (
+    <table>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>english</th>
+          <th>transcription</th>
+          <th>russian</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr key={props.id}>
+          <td>{props.id}</td>
+          <td>{props.english}</td>
+          <td>{props.transcription}</td>
+          <td>{props.russian}</td>
+        </tr>
+      </tbody>
+    </table>
+  );
+}
+export default Table;*/
+import Card from "./Card";
+import TableRow from "./TableRow";
 const words = [
   {
     id: "10847",
@@ -97,68 +114,23 @@ const words = [
   },
 ];
 
-/*
-function App() {
+const Table = () => {
   return (
-    <div className="App">
-      <Header></Header>
-      <div className="Table">
-        {cards.map((table) => (
-          <Table
-            id={table.id}
-            english={table.english}
-            transcription={table.transcription}
-            russian={table.russian}
-            tags={table.tags}
-          ></Table>
-        ))}
-      </div>
-      <div className="Card">
-        {cards.map((card) => (
-          <Card
-            id={card.id}
-            english={card.english}
-            transcription={card.transcription}
-            russian={card.russian}
-            tags={card.tags}
-          ></Card>
-        ))}
-      </div>
-    </div>
+    <>
+      <table>
+        <thead>
+          <th>id</th>
+          <th>english</th>
+          <th>transcription</th>
+          <th>russian</th>
+        </thead>
+        <tbody>
+          {words.map((word: { ... }) => (
+            <TableRow key={word.id} {...word} isEditable={word.id % 2 === 0} />
+          ))}
+        </tbody>
+      </table>
+    </>
   );
-}
-export default App;
-*/
-function App() {
-  return (
-    <div className="App">
-      <Header></Header>
-      <div className="Table">
-        <Table></Table>
-      </div>
-      <div className="Card">
-        {words.map((card) => (
-          <Card
-            id={card.id}
-            english={card.english}
-            transcription={card.transcription}
-            russian={card.russian}
-            tags={card.tags}
-          ></Card>
-        ))}
-      </div>
-    </div>
-  );
-}
-export default App;
-/*
- {words.map((word) => (
-          <TableRow
-            id={word.id}
-            english={word.english}
-            transcription={word.transcription}
-            russian={word.russian}
-            tags={word.tags}
-          ></TableRow>
-        ))}
-        */
+};
+export default Table;
